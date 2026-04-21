@@ -26,9 +26,33 @@ footer{text-align:center;padding:30px;opacity:.5;border-top:1px solid rgba(255,1
 </head>
 <body>
 
+<!-- MAIN PAGE -->
+<div id="mainPage">
+<section class="hero">
+<h1>O NÁS</h1>
+<p>Vítej na Genesis RP – moderním RolePlay serveru zaměřeném na kvalitu, realismus a komunitu.</p>
+</section>
+<div class="container">
+<div class="grid">
+
+<div class="rule"><h3><b>Kdo jsme?</b></h3><p>Genesis RP, začínající FiveM server, kde každý příběh má svůj začátek.
+Jsme komunita zaměřená na kvalitní a realistický roleplay, ve které si zakládáme na přátelské atmosféře a férovém přístupu ke všem hráčům.
+Na našem serveru nezáleží na tom, jestli jsi zkušený hráč nebo úplný nováček, protože každý má u nás stejnou šanci zapojit se a vytvořit si vlastní příběh.
+Můžeš se vydat jakoukoliv cestou, ať už jako poctivý občan, podnikatel, člen záchranných složek, nebo někdo, kdo se pohybuje na hraně zákona.
+Genesis RP je projekt, který se neustále vyvíjí, a proto nasloucháme zpětné vazbě komunity a pracujeme na neustálém zlepšování herního prostředí.
+Každý hráč je pro nás důležitý a má možnost ovlivnit směr, jakým se server bude ubírat.
+Naším cílem je vytvořit stabilní a zábavné prostředí, kam se hráči budou rádi vracet nejen kvůli samotné hře, ale i kvůli lidem, které zde poznají.
+Pokud hledáš místo, kde můžeš začít od začátku a stát se součástí rostoucí komunity, Genesis RP je pro tebe tou správnou volbou.
+Genesis RP je místo, kde začíná tvůj příběh.</p></div>
+
+</div>
+</div>
+</div>
+
 <nav>
 <h2>Genesis RP</h2>
 <div>
+<a href="#" onclick="showPage('main')">O nás</a>
 <a href="#" onclick="showPage('rules')">Pravidla</a>
 <a href="#" onclick="showPage('team')">Náš tým</a>
 </div>
@@ -81,7 +105,9 @@ footer{text-align:center;padding:30px;opacity:.5;border-top:1px solid rgba(255,1
 
 <div class="rule"><h3><b>Chování k AT</b></h3><p>Admin Team má poslední slovo. Je nutné respektovat jejich rozhodnutí, nelhat a spolupracovat při řešení situací.</p></div>
 
- <div class="rule"><h3><b>Fear RP</b></h3><p>Fear RP je pravidlo, které znamená, že se tvoje postava musí chovat realisticky v situacích, kdy je ohrožený její život nebo zdraví. Pokud na tebe někdo míří zbraní, jsi v přesile nebo jsi v jasně nebezpečné situaci, musíš projevit strach a jednat tak, jako bys chtěl přežít. To obvykle znamená poslouchat příkazy, neodporovat a nesnažit se dělat nereálné hrdinské akce, které by v reálném životě nedávaly smysl.</p></div>
+<div class="rule"><h3><b>Fear RP</b></h3><p>Fear RP je pravidlo, které znamená, že se tvoje postava musí chovat realisticky v situacích, kdy je ohrožený její život nebo zdraví. Pokud na tebe někdo míří zbraní, jsi v přesile nebo jsi v jasně nebezpečné situaci, musíš projevit strach a jednat tak, jako bys chtěl přežít.</p></div>
+
+ 
 
 </div></div>
 </div>
@@ -99,9 +125,9 @@ footer{text-align:center;padding:30px;opacity:.5;border-top:1px solid rgba(255,1
 <div class="rule"><h3><b>Head of Staff</b></h3><p>Milda</p></div>
 <div class="rule"><h3><b>Staff</b></h3><p>Feaki3e</p></div>
 <div class="rule"><h3><b>Staff</b></h3><p>Domca</p></div>
-<div class="rule"><h3><b>Developer</b></h3><p>tkrado3.0</p></div>
+<div class="rule"><h3><b>Developer</b></h3><p>Rado</p></div>
 <div class="rule"><h3><b>Developer</b></h3><p>Kevinik</p></div>
-<div class="rule"><h3><b>Developer</b></h3><p>Tufikoss</p></div>
+<div class="rule"><h3><b>Developer</b></h3><p>Tufikoss</p></div>   
 
 </div></div>
 </div>
@@ -110,11 +136,16 @@ footer{text-align:center;padding:30px;opacity:.5;border-top:1px solid rgba(255,1
 
 <script>
 function showPage(page){
+ document.getElementById('mainPage').classList.add('hidden');
  document.getElementById('rulesPage').classList.add('hidden');
+ document.getElementById('mainPage').classList.add('hidden');
  document.getElementById('teamPage').classList.add('hidden');
  document.getElementById(page+'Page').classList.remove('hidden');
 }
+// default page
+showPage('main');
 </script>
 
 </body>
 </html>
+
